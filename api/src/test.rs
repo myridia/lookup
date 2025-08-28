@@ -1,10 +1,7 @@
 use axum::{extract::Request, http::header::HeaderMap, response::IntoResponse, Json};
-//use axum_client_ip::XRealIp as ClientIp;
-//use std::net::SocketAddr;
 
 pub async fn test(headers: HeaderMap, req: Request) -> impl IntoResponse {
     // http://127.0.0.1:8889/test
-    //println!("{:?}", ip);
 
     let xip = req
         .headers()

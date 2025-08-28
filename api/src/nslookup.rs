@@ -13,7 +13,6 @@ pub async fn nslookup(Query(params): Query<HashMap<String, String>>) -> impl Int
 
         let output = Command::new("sh")
             .arg("-c")
-            //.arg("nslookup -type=txt baeckerei-katz.de")
             .arg(cmd)
             .output()
             .expect("Failed to execute command");

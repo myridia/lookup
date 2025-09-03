@@ -7,7 +7,7 @@ services:
       - "80:80"
     volumes:
       - ./etc/nginx/conf.d:/etc/nginx/conf.d      
-      - ../public/:/usr/share/nginx/html/
+      - ../pages/public/:/usr/share/nginx/html/
     tty: true
 
 
